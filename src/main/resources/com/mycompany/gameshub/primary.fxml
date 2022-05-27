@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #1a293a;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.gameshub.PrimaryController">
+   <children>
+      <VBox prefHeight="699.0" prefWidth="308.0">
+         <children>
+            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="424.0" prefWidth="400.0" style="-fx-background-color: #1a293a;">
+               <children>
+                  <Text fill="#5cb7e5" layoutX="76.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GamesHub" textAlignment="CENTER" wrappingWidth="248.80340576171875">
+                     <font>
+                        <Font name="System Bold" size="48.0" />
+                     </font>
+                  </Text>
+               </children></Pane>
+            <Button fx:id="GamesButton" mnemonicParsing="false" onAction="#switchToGames" prefHeight="130.0" prefWidth="400.0" style="-fx-background-color: #1a293a;" text="GAMES" textAlignment="CENTER" textFill="#5cb7e5">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font></Button>
+            <Button fx:id="OptionsButton" mnemonicParsing="false" prefHeight="130.0" prefWidth="400.0" style="-fx-background-color: #1a293a;" text="OPTIONS" textAlignment="CENTER" textFill="#5cb7e5">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font></Button>
+         </children>
+      </VBox>
+      <Pane layoutX="407.0" layoutY="23.0" prefHeight="654.0" prefWidth="793.0" style="-fx-border-color: #172734; -fx-border-width: 15;">
+         <children>
+            <TableView id="." fx:id="tableFavoriteGames" layoutX="39.0" layoutY="412.0" prefHeight="211.0" prefWidth="686.0" style="-fx-background-color: #1a293a;" stylesheets="@../../../styles/table-view.css">
+               <columns>
+                  <TableColumn fx:id="tableGamesName" prefWidth="176.533447265625" text="NAME" />
+                  <TableColumn fx:id="tableGamesLink" minWidth="0.0" prefWidth="350.66650390625" text="URL" />
+                  <TableColumn fx:id="tableGamesButton" prefWidth="156.26678466796875" text="RUN" />
+               </columns>
+            </TableView>
+            <Text fill="#5cb7e5" layoutX="56.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="News" wrappingWidth="266.4033203125">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Text>
+            <Text fill="#5cb7e5" layoutX="56.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Favorite Games" wrappingWidth="266.4033203125">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
